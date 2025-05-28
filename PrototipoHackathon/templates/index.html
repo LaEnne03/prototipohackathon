@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clasificador de E-Waste</title>
+</head>
+<body>
+    <h2>Sube una imagen de un componente electrónico</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="archivo">
+        <input type="submit" value="Clasificar">
+    </form>
+    {% if resultado %}
+        <h3>Resultado: {{ resultado }}</h3>
+    {% endif %}
+</body>
+</html>
